@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurdOperation", "CurdOperation\CurdOperation.csproj", "{556F1D14-4278-4E0D-9266-14F8BE566F9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{556F1D14-4278-4E0D-9266-14F8BE566F9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{556F1D14-4278-4E0D-9266-14F8BE566F9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{556F1D14-4278-4E0D-9266-14F8BE566F9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{556F1D14-4278-4E0D-9266-14F8BE566F9F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {215377D4-2AC1-4D2B-A39B-706AA9B31921}
+	EndGlobalSection
+EndGlobal
