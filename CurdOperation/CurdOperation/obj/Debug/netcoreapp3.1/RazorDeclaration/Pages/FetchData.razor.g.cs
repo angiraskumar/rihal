@@ -76,6 +76,13 @@ using CurdOperation.Shared;
 #line hidden
 #nullable disable
 #nullable restore
+#line 10 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\_Imports.razor"
+using AntDesign;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\Pages\FetchData.razor"
 using CurdOperation.Data;
 

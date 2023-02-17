@@ -75,6 +75,13 @@ using CurdOperation.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\_Imports.razor"
+using AntDesign;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {

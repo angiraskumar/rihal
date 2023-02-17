@@ -28,6 +28,7 @@ namespace CurdOperation
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
+            services.AddAntDesign();
             services.AddSingleton<WeatherForecastService>();
         }
 
