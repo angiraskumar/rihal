@@ -1,6 +1,29 @@
 ﻿@page "/country/create"
-<h3>Create</h3>
+
+@using CurdOperation.Models
+@using CurdOperation.Services
+@inject ICountryService service
+@inject NavigationManager navManger
+<h2>Create Country</h2>
+<EditForm Model="@model" OnSubmit="@CreateCountry" class="card card-body bg-light mt-5">
+    <div class="form-group row">
+        <label for="name" class="col-md-2 col-form-label">Name:</label>
+        <div class="col-md-10">
+            <InputText id="name" class="form-control" @bind-Value="model.CountryName" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-right">
+            <button type="submit" class="btn btn-success">Create</button>
+        </div>
+    </div>
+</EditForm>
 
 @code {
-
+    CountryModel model = new CountryModel();
+    async Task CreateCountry()
+    {
+        await service.AddCountry(model);
+        navManger.NavigateTo("/country/list");
+    }
 }

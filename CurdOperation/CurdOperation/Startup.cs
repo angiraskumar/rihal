@@ -36,9 +36,11 @@ namespace CurdOperation
             services.AddSingleton<WeatherForecastService>();
             services.AddSingleton<IClassesService, ClassesService>();
             services.AddSingleton<IClassesRepository, ClassesRepository>();
-            services.AddSingleton<CountryService>();
-            services.AddSingleton<StudentService>();
-          //  services.AddDbContext<SqlLiteDBContext>(options =>options.UseSqlite("Data Source=Patients.db"));
+            services.AddSingleton<ICountryService,CountryService>();
+            services.AddSingleton<ICountryRepository, CountryRepository>();
+            services.AddSingleton<IStudentService, StudentService>();
+            services.AddSingleton<IStudentRepository, StudentRepository>();
+            //  services.AddDbContext<SqlLiteDBContext>(options =>options.UseSqlite("Data Source=Patients.db"));
 
         }
 

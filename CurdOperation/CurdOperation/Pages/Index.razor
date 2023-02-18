@@ -1,7 +1,70 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+@using CurdOperation.Models
+@using CurdOperation.Services
+@inject IClassesService service
+@inject ICountryService ctrservice
+<h2>Home</h2>
+<div class="row">
+    <div class="card card-body bg-light col-md-4">
+        <div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Class</th>
+                        <th>Nos</th>
 
-Welcome to your new app.
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var cls in models)
+                    {
+                        <tr>
+                            <td>@cls.Name</td>
+                            <td>@cls.NoStudents</td>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="card card-body bg-light col-md-4">
+        <div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Country</th>
+                        <th>Nos</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var cls in modelscountry)
+                    {
+                        <tr>
+                            <td>@cls.Name</td>
+                            <td>@cls.NoStudents</td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="card card-body bg-light col-md-4">
+        <div>
+
+        </div>
+    </div>
+</div>
+@code {
+    private DashboardModel[] models;
+    private DashboardModel[] modelscountry;
+
+    protected override async Task OnInitializedAsync()
+    {
+        models = await service.GetDashboard();
+        modelscountry = await ctrservice.GetDashboard();
+    }
+}

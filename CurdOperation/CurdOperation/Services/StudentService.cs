@@ -1,4 +1,5 @@
 ﻿using CurdOperation.Models;
+using CurdOperation.Repo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +9,14 @@ namespace CurdOperation.Services
 {
     public class StudentService : IStudentService
     {
+        private readonly IStudentRepository _repository;
+        public StudentService(IStudentRepository repository)
+        {
+            _repository = repository;
+        }
         public Task AddStudent(StudentModel student)
         {
-            throw new NotImplementedException();
+           return _repository.AddStudent(student);
         }
 
         public Task DeleteStudent(int id)
@@ -18,15 +24,9 @@ namespace CurdOperation.Services
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<StudentModel>> GetStudent()
+        public Task<StudentModel[]> GetStudents()
         {
-            IList<StudentModel> model = new List<StudentModel>();
-            model.Add(new StudentModel
-            {
-
-            });
-
-            throw new NotImplementedException();
+            return _repository.GetStudents();
         }
 
         public Task<StudentModel> GetStudent(int id)

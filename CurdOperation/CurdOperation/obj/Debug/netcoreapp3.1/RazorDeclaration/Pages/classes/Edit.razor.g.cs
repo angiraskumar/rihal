@@ -75,13 +75,6 @@ using CurdOperation.Web.Shared;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 10 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\_Imports.razor"
-using AntDesign;
-
-#line default
-#line hidden
-#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/classes/edit")]
     public partial class Edit : Microsoft.AspNetCore.Components.ComponentBase
     {

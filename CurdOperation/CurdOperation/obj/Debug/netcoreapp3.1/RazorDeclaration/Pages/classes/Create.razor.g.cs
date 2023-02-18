@@ -76,8 +76,15 @@ using CurdOperation.Web.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\_Imports.razor"
-using AntDesign;
+#line 3 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\Pages\classes\Create.razor"
+using CurdOperation.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\Pages\classes\Create.razor"
+using CurdOperation.Services;
 
 #line default
 #line hidden
@@ -90,6 +97,21 @@ using AntDesign;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 22 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\Pages\classes\Create.razor"
+       
+    ClassesModel model = new ClassesModel();
+    async Task CreateClass()
+    {
+        await service.AddClasses(model);
+        navManger.NavigateTo("/classes/list");
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navManger { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IClassesService service { get; set; }
     }
 }
 #pragma warning restore 1591

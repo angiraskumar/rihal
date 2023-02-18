@@ -1,6 +1,29 @@
 ﻿@page "/classes/create"
-<h3>Create</h3>
+
+@using CurdOperation.Models
+@using CurdOperation.Services
+@inject IClassesService service
+@inject NavigationManager navManger
+<h2>Create Class</h2>
+<EditForm Model="@model" OnSubmit="@CreateClass" class="card card-body bg-light mt-5">
+    <div class="form-group row">
+        <label for="name" class="col-md-2 col-form-label">Name:</label>
+        <div class="col-md-10">
+            <InputText id="name" class="form-control" @bind-Value="model.ClassName" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-right">
+            <button type="submit" class="btn btn-success">Create</button>
+        </div>
+    </div>
+</EditForm>
 
 @code {
-
+    ClassesModel model = new ClassesModel();
+    async Task CreateClass()
+    {
+        await service.AddClasses(model);
+        navManger.NavigateTo("/classes/list");
+    }
 }

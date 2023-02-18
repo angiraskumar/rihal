@@ -76,8 +76,15 @@ using CurdOperation.Web.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\_Imports.razor"
-using AntDesign;
+#line 3 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\Pages\student\Create.razor"
+using CurdOperation.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\Pages\student\Create.razor"
+using CurdOperation.Services;
 
 #line default
 #line hidden
@@ -90,6 +97,31 @@ using AntDesign;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 61 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\Pages\student\Create.razor"
+       
+    StudentModel model = new StudentModel();
+    private ClassesModel[] classes;
+    private CountryModel[] countries;
+    protected override async Task OnInitializedAsync()
+    {
+        classes = await clsservice.GetClasses();
+        countries = await cntryservice.GetCountries();
+    }
+
+    async Task CreateCountry()
+    {
+        await service.AddStudent(model);
+        navManger.NavigateTo("/student/list");
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navManger { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ICountryService cntryservice { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IClassesService clsservice { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IStudentService service { get; set; }
     }
 }
 #pragma warning restore 1591

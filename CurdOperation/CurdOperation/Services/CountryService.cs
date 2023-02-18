@@ -1,4 +1,5 @@
 ﻿using CurdOperation.Models;
+using CurdOperation.Repo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +9,14 @@ namespace CurdOperation.Services
 {
     public class CountryService : ICountryService
     {
+        private readonly ICountryRepository _repository;
+        public CountryService(ICountryRepository repository)
+        {
+            _repository = repository;
+        }
         public Task AddCountry(CountryModel country)
         {
-            throw new NotImplementedException();
+            return _repository.AddCountry(country);
         }
 
         public Task DeleteCountry(int id)
@@ -18,9 +24,9 @@ namespace CurdOperation.Services
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<CountryModel>> GetCountry()
+        public Task<CountryModel[]> GetCountries()
         {
-            throw new NotImplementedException();
+            return _repository.GetCountries();
         }
 
         public Task<CountryModel> GetCountry(int id)
@@ -31,6 +37,10 @@ namespace CurdOperation.Services
         public Task UpdateCountry(CountryModel country)
         {
             throw new NotImplementedException();
+        }
+        public Task<DashboardModel[]> GetDashboard()
+        {
+            return _repository.GetDashboard();
         }
     }
 }

@@ -75,13 +75,6 @@ using CurdOperation.Web.Shared;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 10 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\_Imports.razor"
-using AntDesign;
-
-#line default
-#line hidden
-#nullable disable
     public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -90,7 +83,7 @@ using AntDesign;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 38 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\Shared\NavMenu.razor"
+#line 34 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

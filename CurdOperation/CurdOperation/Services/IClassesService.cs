@@ -13,5 +13,6 @@ namespace CurdOperation.Services
         Task DeleteClasses(int id);
         Task AddClasses(ClassesModel employee);
         Task UpdateClasses(ClassesModel employee);
+        Task<DashboardModel[]> GetDashboard();
     }
 }

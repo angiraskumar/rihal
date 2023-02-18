@@ -16,9 +16,9 @@ namespace CurdOperation.Services
         {
             _repository = repository;
         }
-        public  Task AddClasses(ClassesModel employee)
+        public  Task AddClasses(ClassesModel model)
         {
-            throw new NotImplementedException();
+            return _repository.AddClasses( model);
         }
 
         public Task DeleteClasses(int id)
@@ -40,6 +40,10 @@ namespace CurdOperation.Services
         public Task UpdateClasses(ClassesModel employee)
         {
             throw new NotImplementedException();
+        }
+        public Task<DashboardModel[]> GetDashboard()
+        {
+            return _repository.GetDashboard();
         }
     }
 }

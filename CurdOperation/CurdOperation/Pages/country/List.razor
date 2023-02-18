@@ -1,6 +1,48 @@
 ﻿@page "/country/list"
-<h3>List</h3>
+
+@using CurdOperation.Models
+@using CurdOperation.Services
+@inject ICountryService service
+
+<div>
+    <h3>Country List</h3>
+    <div class="form-group">
+        <a class="btn btn-success" href="country/create"><i class="oi oi-plus"></i> Create New</a>
+    </div>
+    <br>
+</div>
+@if (models == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Class Name</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cls in models)
+            {
+                <tr>
+                    <td>@cls.CountryId</td>
+                    <td>@cls.CountryName</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}
 
 @code {
+    private CountryModel[] models;
 
+    protected override async Task OnInitializedAsync()
+    {
+        models = await service.GetCountries();
+    }
 }

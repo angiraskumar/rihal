@@ -1,17 +1,17 @@
 ﻿using CurdOperation.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
-namespace CurdOperation.Services
+namespace CurdOperation.Repo
 {
-    public interface IStudentService
+    public interface IStudentRepository
     {
         Task<StudentModel[]> GetStudents();
         Task<StudentModel> GetStudent(int id);
         Task DeleteStudent(int id);
-        Task AddStudent(StudentModel student);
-        Task UpdateStudent(StudentModel student);
+        Task<string> AddStudent(StudentModel model);
+        Task UpdateStudent(StudentModel model);
     }
 }

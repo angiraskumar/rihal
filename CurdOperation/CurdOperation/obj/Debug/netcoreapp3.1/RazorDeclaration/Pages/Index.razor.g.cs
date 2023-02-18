@@ -76,8 +76,15 @@ using CurdOperation.Web.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\_Imports.razor"
-using AntDesign;
+#line 3 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\Pages\Index.razor"
+using CurdOperation.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\Pages\Index.razor"
+using CurdOperation.Services;
 
 #line default
 #line hidden
@@ -90,6 +97,23 @@ using AntDesign;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 61 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\Pages\Index.razor"
+       
+    private DashboardModel[] models;
+    private DashboardModel[] modelscountry;
+
+    protected override async Task OnInitializedAsync()
+    {
+        models = await service.GetDashboard();
+        modelscountry = await ctrservice.GetDashboard();
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ICountryService ctrservice { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IClassesService service { get; set; }
     }
 }
 #pragma warning restore 1591

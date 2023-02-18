@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace CurdOperation.Web.Pages.student
+namespace CurdOperation.Web.Pages.classes
 {
     #line hidden
     using System;
@@ -76,41 +76,19 @@ using CurdOperation.Web.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\Pages\student\List.razor"
-using CurdOperation.Models;
+#line 10 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\_Imports.razor"
+using AntDesign;
 
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 4 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\Pages\student\List.razor"
-using CurdOperation.Services;
-
-#line default
-#line hidden
-#nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/student/list")]
-    public partial class List : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class Form : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 45 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\Pages\student\List.razor"
-       
-    private StudentModel[] models;
-
-    protected override async Task OnInitializedAsync()
-    {
-        models = await service.GetStudents();
-    }
-
-#line default
-#line hidden
-#nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IStudentService service { get; set; }
     }
 }
 #pragma warning restore 1591

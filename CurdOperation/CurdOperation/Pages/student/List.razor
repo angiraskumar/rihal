@@ -1,6 +1,52 @@
 ﻿@page "/student/list"
-<h3>List</h3>
+
+@using CurdOperation.Models
+@using CurdOperation.Services
+@inject IStudentService service
+
+<div>
+    <h3>Student List</h3>
+    <div class="form-group">
+        <a class="btn btn-success" href="student/create"><i class="oi oi-plus"></i> Create New</a>
+    </div>
+    <br>
+</div>
+@if (models == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Student Name</th>
+                <th>Class</th>
+                <th>Country</th>
+                <th>Last Update</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cls in models)
+            {
+            <tr>
+                <td>@cls.StudentId</td>
+                <td>@cls.StudentName</td>
+                <td>@cls.ClassName</td>
+                <td>@cls.CountryName</td>
+                <td>@cls.LastDate</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
 
 @code {
+    private StudentModel[] models;
 
+    protected override async Task OnInitializedAsync()
+    {
+        models = await service.GetStudents();
+    }
 }
