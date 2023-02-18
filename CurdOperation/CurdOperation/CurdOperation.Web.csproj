@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CurdOperation.Models\CurdOperation.Models.csproj" />
+    <ProjectReference Include="..\CurdOperation.Repo\CurdOperation.Repo.csproj" />
   </ItemGroup>
 
 </Project>

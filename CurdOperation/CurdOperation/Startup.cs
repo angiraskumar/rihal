@@ -1,4 +1,5 @@
 using CurdOperation.Data;
+using CurdOperation.Repo;
 using CurdOperation.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
@@ -32,6 +33,7 @@ namespace CurdOperation
           
             services.AddSingleton<WeatherForecastService>();
             services.AddSingleton<IClassesService, ClassesService>();
+            services.AddSingleton<IClassesRepository, ClassesRepository>();
             services.AddSingleton<CountryService>();
             services.AddSingleton<StudentService>();
            

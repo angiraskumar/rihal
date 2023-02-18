@@ -1,4 +1,5 @@
 ﻿using CurdOperation.Models;
+using CurdOperation.Repo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,11 @@ namespace CurdOperation.Services
 {
     public class ClassesService : IClassesService
     {
-       
-        public ClassesService()
+
+        private readonly IClassesRepository _repository;
+        public ClassesService(IClassesRepository repository)
         {
-           
+            _repository = repository;
         }
         public  Task AddClasses(ClassesModel employee)
         {
@@ -26,34 +28,8 @@ namespace CurdOperation.Services
 
         public  Task<ClassesModel[]> GetClasses()
         {
-            IList<ClassesModel> model = new List<ClassesModel>();
-            model.Add(new ClassesModel
-            {
-                ClassId=1,
-                ClassName="I"
-            });
-            model.Add(new ClassesModel
-            {
-                ClassId = 2,
-                ClassName = "II"
-            });
-            model.Add(new ClassesModel
-            {
-                ClassId = 1,
-                ClassName = "III"
-            });
-            model.Add(new ClassesModel
-            {
-                ClassId = 1,
-                ClassName = "IV"
-            });
-            model.Add(new ClassesModel
-            {
-                ClassId = 1,
-                ClassName = "V"
-            });
-
-            return Task.FromResult(model.ToArray());
+            
+            return _repository.GetClasses();
         }
 
         public Task<ClassesModel> GetClasses(int id)
