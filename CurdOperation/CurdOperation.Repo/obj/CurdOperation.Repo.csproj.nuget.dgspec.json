@@ -106,9 +106,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "System.Data.SQLite": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[1.0.117, )"
+              "version": "[2.1.1, )"
             }
           },
           "imports": [

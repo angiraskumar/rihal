@@ -11,6 +11,3 @@ E:\ProjectSample\Rihal\CurdOperation\CurdOperation.Repo\obj\Debug\netcoreapp3.1\
 E:\ProjectSample\Rihal\CurdOperation\CurdOperation.Repo\obj\Debug\netcoreapp3.1\CurdOperation.Repo.csproj.CopyComplete
 E:\ProjectSample\Rihal\CurdOperation\CurdOperation.Repo\obj\Debug\netcoreapp3.1\CurdOperation.Repo.dll
 E:\ProjectSample\Rihal\CurdOperation\CurdOperation.Repo\obj\Debug\netcoreapp3.1\CurdOperation.Repo.pdb
-E:\ProjectSample\Rihal\CurdOperation\CurdOperation.Repo\bin\Debug\netcoreapp3.1\CurdOperation.Repo.runtimeconfig.json
-E:\ProjectSample\Rihal\CurdOperation\CurdOperation.Repo\bin\Debug\netcoreapp3.1\CurdOperation.Repo.runtimeconfig.dev.json
-E:\ProjectSample\Rihal\CurdOperation\CurdOperation.Repo\obj\Debug\netcoreapp3.1\CurdOperation.Repo.genruntimeconfig.cache
