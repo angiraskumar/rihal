@@ -2300,6 +2300,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "CurdOperation.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/CurdOperation.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CurdOperation.Models.dll": {}
+        }
       }
     }
   },
@@ -8267,11 +8277,17 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "CurdOperation.Models/1.0.0": {
+      "type": "project",
+      "path": "../CurdOperation.Models/CurdOperation.Models.csproj",
+      "msbuildProject": "../CurdOperation.Models/CurdOperation.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "AntDesign >= 0.14.2",
+      "CurdOperation.Models >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.6",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.6"
     ]
@@ -8283,9 +8299,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ProjectSample\\Rihal\\CurdOperation\\CurdOperation\\CurdOperation.csproj",
-      "projectName": "CurdOperation",
-      "projectPath": "E:\\ProjectSample\\Rihal\\CurdOperation\\CurdOperation\\CurdOperation.csproj",
+      "projectUniqueName": "E:\\ProjectSample\\Rihal\\CurdOperation\\CurdOperation\\CurdOperation.Web.csproj",
+      "projectName": "CurdOperation.Web",
+      "projectPath": "E:\\ProjectSample\\Rihal\\CurdOperation\\CurdOperation\\CurdOperation.Web.csproj",
       "packagesPath": "C:\\Users\\angiras\\.nuget\\packages\\",
       "outputPath": "E:\\ProjectSample\\Rihal\\CurdOperation\\CurdOperation\\obj\\",
       "projectStyle": "PackageReference",
@@ -8307,7 +8323,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\ProjectSample\\Rihal\\CurdOperation\\CurdOperation.Models\\CurdOperation.Models.csproj": {
+              "projectPath": "E:\\ProjectSample\\Rihal\\CurdOperation\\CurdOperation.Models\\CurdOperation.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

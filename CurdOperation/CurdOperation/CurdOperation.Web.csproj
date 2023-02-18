@@ -13,4 +13,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CurdOperation.Models\CurdOperation.Models.csproj" />
+  </ItemGroup>
+
 </Project>

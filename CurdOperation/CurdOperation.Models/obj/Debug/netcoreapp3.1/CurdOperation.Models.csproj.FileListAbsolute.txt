@@ -1,0 +1,10 @@
+E:\ProjectSample\Rihal\CurdOperation\CurdOperation.Models\bin\Debug\netcoreapp3.1\CurdOperation.Models.deps.json
+E:\ProjectSample\Rihal\CurdOperation\CurdOperation.Models\bin\Debug\netcoreapp3.1\CurdOperation.Models.dll
+E:\ProjectSample\Rihal\CurdOperation\CurdOperation.Models\bin\Debug\netcoreapp3.1\CurdOperation.Models.pdb
+E:\ProjectSample\Rihal\CurdOperation\CurdOperation.Models\obj\Debug\netcoreapp3.1\CurdOperation.Models.csproj.AssemblyReference.cache
+E:\ProjectSample\Rihal\CurdOperation\CurdOperation.Models\obj\Debug\netcoreapp3.1\CurdOperation.Models.GeneratedMSBuildEditorConfig.editorconfig
+E:\ProjectSample\Rihal\CurdOperation\CurdOperation.Models\obj\Debug\netcoreapp3.1\CurdOperation.Models.AssemblyInfoInputs.cache
+E:\ProjectSample\Rihal\CurdOperation\CurdOperation.Models\obj\Debug\netcoreapp3.1\CurdOperation.Models.AssemblyInfo.cs
+E:\ProjectSample\Rihal\CurdOperation\CurdOperation.Models\obj\Debug\netcoreapp3.1\CurdOperation.Models.csproj.CoreCompileInputs.cache
+E:\ProjectSample\Rihal\CurdOperation\CurdOperation.Models\obj\Debug\netcoreapp3.1\CurdOperation.Models.dll
+E:\ProjectSample\Rihal\CurdOperation\CurdOperation.Models\obj\Debug\netcoreapp3.1\CurdOperation.Models.pdb

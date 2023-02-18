@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace CurdOperation
+namespace CurdOperation.Web
 {
     #line hidden
     using System;
@@ -63,14 +63,14 @@ using Microsoft.JSInterop;
 #nullable disable
 #nullable restore
 #line 8 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\_Imports.razor"
-using CurdOperation;
+using CurdOperation.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 9 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\_Imports.razor"
-using CurdOperation.Shared;
+using CurdOperation.Web.Shared;
 
 #line default
 #line hidden

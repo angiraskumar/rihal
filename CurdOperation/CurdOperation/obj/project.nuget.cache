@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LOYU5AXGSQSFQFpLXHGUzizjz8sb40MC7/NbRWe95rrCvQVzCOv//34mzNCfUfu9PEdC99Z3zu19iq8ChgGnLA==",
+  "dgSpecHash": "d32N4i9PCPuZ/o2GOV3jiMcKNAtEYPCwVEIGTanq4vjBT3NaAVs0h1ovLQbddLq89fgFjewhRH30tmoJUnEKuA==",
   "success": true,
-  "projectFilePath": "E:\\ProjectSample\\Rihal\\CurdOperation\\CurdOperation\\CurdOperation.csproj",
+  "projectFilePath": "E:\\ProjectSample\\Rihal\\CurdOperation\\CurdOperation\\CurdOperation.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\angiras\\.nuget\\packages\\antdesign\\0.14.2\\antdesign.0.14.2.nupkg.sha512",
     "C:\\Users\\angiras\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

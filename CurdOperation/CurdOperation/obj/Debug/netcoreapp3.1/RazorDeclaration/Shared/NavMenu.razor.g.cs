@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace CurdOperation.Shared
+namespace CurdOperation.Web.Shared
 {
     #line hidden
     using System;
@@ -63,14 +63,14 @@ using Microsoft.JSInterop;
 #nullable disable
 #nullable restore
 #line 8 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\_Imports.razor"
-using CurdOperation;
+using CurdOperation.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 9 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\_Imports.razor"
-using CurdOperation.Shared;
+using CurdOperation.Web.Shared;
 
 #line default
 #line hidden
@@ -90,7 +90,7 @@ using AntDesign;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 33 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\Shared\NavMenu.razor"
+#line 38 "E:\ProjectSample\Rihal\CurdOperation\CurdOperation\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

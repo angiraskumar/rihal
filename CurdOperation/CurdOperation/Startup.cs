@@ -1,4 +1,5 @@
 using CurdOperation.Data;
+using CurdOperation.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
@@ -28,8 +29,13 @@ namespace CurdOperation
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            services.AddAntDesign();
+          
             services.AddSingleton<WeatherForecastService>();
+            services.AddSingleton<IClassesService, ClassesService>();
+            services.AddSingleton<CountryService>();
+            services.AddSingleton<StudentService>();
+           
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,7 +52,7 @@ namespace CurdOperation
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+           // app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
